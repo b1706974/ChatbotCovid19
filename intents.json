@@ -1,0 +1,93 @@
+{"intents": [
+         {"tag": "greeting",
+            "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day","Who are you?"],
+            "responses": ["Hello, thanks for asking. I am CovidBot: Assistant to automatically answer questions regarding Covid-19 translation. Developed by Dao Chi Buu under python programming research project, guided by Phd Truong Minh Thai.", "Good to see you.  I am CovidBot: Assistant to automatically answer questions regarding Covid-19 translation. Developed by Dao Chi Buu under python programming research project, guided by Phd Truong Minh Thai.", "Hi there, how can I help?  I am CovidBot: Assistant to automatically answer questions regarding Covid-19 translation. Developed by Dao Chi Buu under python programming research project, guided by Phd Truong Minh Thai."],
+            "context": [""]
+        },
+        {"tag": "misson",
+         "patterns": ["what can you do?","Help me"],
+         "responses": ["I was created to intelligently and scientifically deliver information about the 19 Covid pandemic. Please ask ne if you need help","My mission is to help people learn more about covod 19. Please ask ne if you need help"],
+         "context": [""]
+        },
+        {  "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you! Stay healthy, Vietnam will win against Covid 19", "Have a nice day. Stay healthy, Vietnam will win against Covid 19", "Bye! Come back again soon. Stay healthy, Vietnam will win against Covid 19"],
+            "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+          {"tag": "thaythai",
+         "patterns": ["Who is thay thai?"],
+         "responses": ["he is my teacher"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["What is Covid 19?", "Do you know about Covid 19?", "Tell me about Covid 19?"],
+         "responses": ["Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus, Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness"],
+         "context": [""]
+        },
+         {"tag": "declaration",
+         "patterns": ["How can i declar?","media declartion?"],
+         "responses": ["People take the initiative to make medical declarations through two forms of downloading NCOVI, BLUEZONE applications or accessing tokhaiyte.vn from March 10"],
+         "context": [""]
+        },
+        {"tag": "adverse_drug",
+         "patterns": ["How can i prevent?","The prevention?","Tell me prevention"],
+         "responses": ["To prevent infection and to slow transmission of COVID-19, do the following: Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub. Maintain at least 1 metre distance between you and people coughing or sneezing. Avoid touching your face. Cover your mouth and nose when coughing or sneezing. Stay home if you feel unwell. Refrain from smoking and other activities that weaken the lungs. Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.", "In order to prevent Covid-19 infection, good personal hygiene is required. This is a non-specific preventive measure. Personal hygiene includes: - Hand hygiene: Always keep hands clean; wash your hands often. Body hygiene: Take a shower every day. Even in winter, daily baths are required to remove pathogens that may be on the skin. - Cleaning clothes: Clothes are places where agents can stick (like saliva), so it is necessary to change clothes regularly and wash with soap. - Hair hygiene: Long hair, tangled hair ... is a place that can contain germs (through patient saliva). So, you should cut your hair short, women should wrap or neatly bun, wash their hair daily to minimize pathogens that can stick on the hair. - Nail hygiene: Do not let nails and toes be long. Nails and toenails can contain Covid-19 pathogens, so always keep fingernails, feet and clean hands clean to limit pathogens."],
+         "context": [""]
+        },
+        {"tag": "blood_pressure",
+         "patterns": ["What are symptoms?"],
+         "responses": ["The most common initial clinical symptoms are fever, dry cough, fatigue, and muscle pain. Some cases may include sore throat, stuffy nose, runny nose, headache, cough with sputum, vomiting and diarrhea. In severe cases, pneumonia appeared; shortness of breath due to severe pneumonia, progressive acute respiratory distress syndrome (ARDS); impaired function of organs. Symptoms of the disease appear 2-14 days after exposure to the source of the disease", "COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization. Most common symptoms: (fever,dry cough,tiredness). Less common symptoms: (aches and pains, sore throat, diarrhoea, conjunctivitis, headache,loss of taste or smell, a rash on skin, or discolouration of fingers or toes). Serious symptoms:(difficulty breathing or shortness of breath,chest pain or pressure,loss of speech or movement.)"],
+         "context": [""]
+        },
+        {"tag": "situation",
+         "patterns":["Covid situation", "Covid now"],
+         "responses": ["Globally, as of 7:08pm CET, 17 January 2021, there have been 91.816.091 confirmed cases of COVID-19, including 1.986.871 deaths, reported to WHO."],
+         "context": [""]
+        },
+        {"tag": "blood_pressure_search",
+         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+         "responses": ["Please provide Patient ID", "Patient ID?"],
+         "context": ["search_blood_pressure_by_patient_id"]
+        },
+        {"tag": "search_blood_pressure_by_patient_id",
+         "patterns": [],
+         "responses": ["Loading Blood pressure result for Patient"],
+         "context": [""]
+        },
+        {"tag": "pharmacy_search",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
